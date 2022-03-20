@@ -1,30 +1,10 @@
-#navbar {
-  background-color: #ff4c68;
-  color: #fff;
-}
-
-#title {
-  background-color: #ff4c68;
-  color: #fff;
-}
-
-h1 {
+body {
   font-family: 'Montserrat';
-  font-size: 3.5rem;
-  line-height: 1.5;
-  font-weight: 900;
+  font-weight: 400;
+  text-align: center;
 }
 
-h2 {
-  font-family: 'Montserrat';
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.5;
-}
-
-h3 {
-  font-family: 'Montserrat';
-  font-size: 1.5rem;
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
 }
 
@@ -32,22 +12,35 @@ p {
   color: #8f8f8f;
 }
 
-body {
-  font-family: 'Montserrat';
-  font-weight: 400;
+/* Headings */
+.big-heading {
+  font-size: 3.5rem;
+  line-height: 1.5;
 }
 
-.container-title {
-  padding: 3% 15% 7%;
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
+/* Containers */
 .container-fluid {
-  padding: 3% 15% 3%;
+  padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
 }
 
 /* Navigation Bar */
 .navbar {
-  padding: 0;
+  padding: 0 0 4.5rem;
 }
 
 .navbar-brand {
@@ -62,13 +55,23 @@ body {
 
 .nav-link {
   font-size: 1.2rem;
-  font-family: "Montserrat";
-  font-weight: normal;
+  font-weight: 300;
 }
 
-/* Download Buttons */
+/* Buttons */
 .download-button {
   margin: 5% 3% 5% 0;
+}
+
+/* Title Section */
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
 }
 
 /* Title Image */
@@ -79,106 +82,84 @@ body {
   right: 30%;
 }
 
-.iphone-img{
+.iphone-img {
   position: relative;
 }
 
 /* Features Section */
 #features {
-  padding: 7% 15%;
-  background-color: #fff;
   position: relative;
 }
 
-.features-div-align {
-  text-align: center;
-  padding: 5%;
+.feature-title {
+  font-size: 1.5rem;
 }
 
-.features-icons {
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
   color: #ef8172;
   margin-bottom: 1rem;
 }
 
-.features-icons:hover {
+.icon:hover {
   color: #ff4c68;
 }
 
-
-/* Testimonials */
-
+/* Testimonial Section */
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
-  color: #fff;
 }
 
-.testimonials-img{
-width: 10%;
-border-radius: 100%;
-margin: 20px;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
-#press{
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+#press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
-.press-logo{
+.press-logo {
   width: 15%;
   margin: 20px 20px 50px;
 }
 
-.carousel-item{
-    padding: 7% 15%;
-}
-
 /* Pricing Section */
-
-#pricing{
-  padding: 7% 15%;
-  text-align: center;
+#pricing {
+  padding: 100px;
 }
 
-.pricing-column{
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
   padding: 3% 2%;
 }
 
-/* CTA Section */
-
-#cta{
-  background-color: #ff4c68;
-  text-align: center;
-  color: #fff;
-  padding: 7% 15%;
-
-}
-
-/* Footer Section */
-
-#footer{
-  background-color: #fff;
-  text-align: center;
-  padding: 7% 15%;
-}
-
-.footer-p{
-  margin: 20px;
-}
-
-.footer-links{
+.social-icon {
   margin: 20px 10px;
   color: black;
 }
 
 @media (max-width: 1028px) {
-  #title{
+  #title {
     text-align: center;
   }
-  .title-image{
+
+  .title-image {
     position: static;
     transform: rotate(0);
   }
-
 }
