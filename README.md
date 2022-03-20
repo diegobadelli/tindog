@@ -1,3 +1,7 @@
+# TinDog Website
+
+#### Training exercise using HTML, CSS and Bootstrap.
+
 The tindog website includes:
 
 - Bootstrap Navigation Bar
